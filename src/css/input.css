@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.container {
+		@apply !max-w-[1280px];
+	}
+	body {
+		@apply relative text-black-400;
+	}
+
+	section {
+		@apply py-3 md:py-4;
+	}
+
+	h3 {
+		@apply text-4xl font-bold leading-none;
+	}
+}
+
+@layer components {
+	/* Button */
+	.btn {
+		@apply inline-block rounded-md bg-green-400 px-6 py-3 font-extrabold transition-colors hover:bg-green-500 hover:text-green-400;
+	}
+
+	/* Input */
+	.input {
+		@apply w-full rounded-[5px] border-none bg-white px-[15px] py-[10px] text-lg placeholder:text-black-400;
+	}
+}
+
+/* Swiper Slider */
+.swiper-hero {
+	border-radius: 15px;
+	overflow: hidden;
+}
+.swiper-button-next:after {
+	font-size: 0 !important;
+	background: url('../img/next-arrow.svg') center/contain no-repeat;
+	width: 42px !important;
+	height: 42px !important;
+}
+.swiper-button-prev:after {
+	font-size: 0 !important;
+	background: url('../img/prev-arrow.svg') center/contain no-repeat;
+	width: 42px !important;
+	height: 42px !important;
+}

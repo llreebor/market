@@ -1,0 +1,548 @@
+<!doctype html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Market</title>
+		<!-- TailwindCSS -->
+		<link rel="stylesheet" href="./css/output.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Swiper Slider -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+
+	<body class="h-full font-outfit">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header -->
+			<header>
+				<div class="container">
+					<div class="flex items-center justify-between gap-3 py-5">
+						<!-- Burger Button -->
+						<button id="burger" class="group z-30 w-[42px] space-y-2 md:hidden">
+							<span
+								class="group-[.active]: flex h-[3px] w-full bg-black-400 transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+							></span>
+							<span
+								class="flex h-[3px] w-full bg-black-400 group-[.active]:scale-0"
+							></span>
+							<span
+								class="flex h-[3px] w-5 bg-black-400 transition-transform group-[.active]:w-full group-[.active]:-translate-y-[13px] group-[.active]:-rotate-45"
+							></span>
+						</button>
+
+						<!-- Desktop Menu -->
+						<nav class="hidden md:block">
+							<ul id="menu" class="flex gap-4 lg:gap-8">
+								<li>
+									<a
+										href="#"
+										class="p-[10px] font-extrabold transition-colors hover:text-green-400"
+									>
+										About Us
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="p-[10px] font-extrabold transition-colors hover:text-green-400"
+									>
+										Locations
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="p-[10px] font-extrabold transition-colors hover:text-green-400"
+									>
+										Social Media
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="p-[10px] font-extrabold transition-colors hover:text-green-400"
+									>
+										Contact
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<!-- Mobile menu -->
+						<nav
+							id="mobile-menu"
+							class="fixed bottom-0 left-0 right-0 top-0 z-20 hidden h-screen w-screen bg-white"
+						>
+							<ul
+								class="flex w-full flex-col items-center justify-center gap-10 overflow-auto py-20 text-center"
+							>
+								<li>
+									<a href="#" class="text-center text-3xl text-black-400">
+										Home
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="text-center text-3xl text-black-400">
+										About Us
+									</a>
+								</li>
+								<li>
+									<a href="#" class="text-center text-3xl text-black-400">
+										Features
+									</a>
+								</li>
+								<li>
+									<a href="#" class="text-center text-3xl text-black-400">
+										Solution
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="z-20 flex items-center gap-4">
+							<img
+								class="w-32 xs:max-w-[174px]"
+								src="./img/nav-logo.png"
+								alt="nav logo"
+							/>
+							<a href="#" class="btn px-3 xs:px-6">
+								<img
+									class="xs:hidden"
+									src="./img/download.svg"
+									alt="download icon"
+								/>
+								<span class="hidden xs:block">Get the app</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Hero -->
+				<section class="mt-4 md:mt-6">
+					<div class="container">
+						<!-- Slider main container -->
+						<div class="swiper swiper-hero">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+
+								<div class="swiper-slide">
+									<picture>
+										<source
+											media="(max-width: 450px)"
+											srcset="./img/hero-slide-mob.png"
+										/>
+										<source
+											media="(min-width: 450px)"
+											srcset="./img/hero-slide.png"
+										/>
+										<img src="./img/hero-slide-mob.png" alt="hero slide" />
+									</picture>
+								</div>
+
+								<div class="swiper-slide">
+									<picture>
+										<source
+											media="(max-width: 450px)"
+											srcset="./img/hero-slide-mob.png"
+										/>
+										<source
+											media="(min-width: 450px)"
+											srcset="./img/hero-slide.png"
+										/>
+										<img src="./img/hero-slide-mob.png" alt="hero slide" />
+									</picture>
+								</div>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev swiper-button-prev-hero"></div>
+							<div class="swiper-button-next swiper-button-next-hero"></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- About -->
+				<section>
+					<div class="container">
+						<div
+							class="flex flex-col gap-10 rounded-[15px] bg-orange-50 p-[30px] md:flex-row"
+						>
+							<div
+								class="z-10 mx-auto -mt-[100px] rounded-[10px] bg-white p-3 shadow-light xs:size-[280px] md:shrink-0 lg:-mt-[100px]"
+							>
+								<img src="./img/farmer-logo.png" alt="farmer logo" />
+							</div>
+							<div class="flex flex-col gap-[10px] lg:flex-row lg:gap-10">
+								<div class="flex flex-col gap-[10px]">
+									<h3>Park Rose Farmers Market</h3>
+									<p>
+										Discover the heart of Colorado Springs at Park Rose Farmers
+										Market. From fresh local produce to gourmet food trucks and
+										artisan crafts, our market offers a vibrant taste of our
+										community's best.
+									</p>
+								</div>
+
+								<div
+									class="flex flex-col gap-[10px] lg:max-w-[225px] lg:shrink-0"
+								>
+									<ul class="my-[10px] flex flex-col gap-[10px]">
+										<li>
+											<a
+												class="flex items-center gap-[10px]"
+												target="_blank"
+												href="tel:3031234567"
+											>
+												<img src="./img/phone.svg" alt="icon" />
+												<span>(303) 123-4567</span>
+											</a>
+										</li>
+										<li>
+											<a
+												class="flex items-center gap-[10px]"
+												target="_blank"
+												href="mailto:info@parkrosemarket.com"
+											>
+												<img src="./img/mail.svg" alt="icon" />
+												<span>info@parkrosemarket.com</span>
+											</a>
+										</li>
+										<li>
+											<a
+												class="flex items-center gap-[10px]"
+												target="_blank"
+												href="tel:3031234567"
+											>
+												<img src="./img/link.svg" alt="icon" />
+												<span>parkrosemarket.com</span>
+											</a>
+										</li>
+									</ul>
+
+									<ul class="flex items-center gap-[10px]">
+										<li>
+											<a href="#" class="group" target="_blank">
+												<img
+													class="transition-transform group-hover:scale-110"
+													src="./img/facebook.svg"
+													alt="facebook icon"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="group" target="_blank">
+												<img
+													class="transition-transform group-hover:scale-110"
+													src="./img/instagram.svg"
+													alt="instagram icon"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="group" target="_blank">
+												<img
+													class="transition-transform group-hover:scale-110"
+													src="./img/youtube.svg"
+													alt="youtube icon"
+												/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="mt-6 flex flex-col gap-4 rounded-[15px] bg-green-400 p-[30px] md:flex-row md:gap-14 lg:gap-[180px]"
+						>
+							<div class="flex items-center gap-3 md:shrink-0">
+								<img src="./img/info.svg" alt="unfo icon" />
+								<p class="text-xl font-bold">New seasonal hours</p>
+							</div>
+
+							<p>
+								Market will be open from 10am to 1pm every other Saturday for
+								the season.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Map -->
+				<section>
+					<div class="container">
+						<div
+							class="bg-map after:bg-map-gradient relative overflow-hidden bg-cover bg-center bg-no-repeat p-4 after:pointer-events-none after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-cover after:bg-center after:bg-no-repeat xs:px-8 xs:py-9 md:py-[74px]"
+						>
+							<img
+								class="absolute left-1/2 top-1/2 -mt-3 hidden -translate-x-1/2 -translate-y-1/2 md:block"
+								src="./img/map-icon.svg"
+								alt="map point icon"
+							/>
+							<div
+								class="z-10 mx-auto mt-[315px] max-w-[320px] space-y-4 rounded-[10px] bg-orange-50 p-4 shadow-light md:m-0"
+							>
+								<p class="text-xl font-bold">Details</p>
+
+								<ul class="flex flex-col gap-4">
+									<li class="flex items-start gap-4">
+										<img src="./img/calendar.svg" alt="icon" />
+										<span>Every other Saturday from January-April</span>
+									</li>
+									<li class="flex items-start gap-4">
+										<img src="./img/time.svg" alt="icon" />
+										<span>10:00am - 1:00pm</span>
+									</li>
+									<li class="flex items-start gap-4">
+										<img src="./img/map-point.svg" alt="icon" />
+										<span>
+											Centennial Plaza433 South 1st St.Colorado Springs, CO
+											80918
+										</span>
+									</li>
+								</ul>
+
+								<a href="#" class="btn flex justify-center">Get directions</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Contacts -->
+				<section class="mt-8 bg-orange-50 py-8 lg:mt-20 lg:py-20">
+					<div class="container">
+						<div class="flex flex-col gap-[54px] md:gap-[144px]">
+							<div class="grid gap-9 md:grid-cols-2">
+								<a href="#" target="_blank" class="flex w-full">
+									<img
+										class="h-auto w-full max-w-full shadow-light"
+										src="./img/link-1.png"
+										alt="social media link"
+									/>
+								</a>
+								<a href="#" target="_blank" class="flex w-full">
+									<img
+										class="h-auto w-full max-w-full shadow-light"
+										src="./img/link-2.png"
+										alt="social media link"
+									/>
+								</a>
+							</div>
+							<div class="grid gap-9 md:grid-cols-2">
+								<div class="flex max-w-[400px] flex-col gap-3">
+									<p class="font-bold">Send a message to the</p>
+									<h3>Park Rose Farmers Market</h3>
+									<ul class="my-[10px] flex flex-col gap-[10px]">
+										<li>
+											<a
+												class="flex items-center gap-[10px]"
+												target="_blank"
+												href="tel:3031234567"
+											>
+												<img src="./img/phone.svg" alt="icon" />
+												<span>(303) 123-4567</span>
+											</a>
+										</li>
+										<li>
+											<a
+												class="flex items-center gap-[10px]"
+												target="_blank"
+												href="mailto:info@parkrosemarket.com"
+											>
+												<img src="./img/mail.svg" alt="icon" />
+												<span>info@parkrosemarket.com</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<form action="#" class="flex flex-col gap-4">
+										<label for="name">
+											<input
+												class="input"
+												type="text"
+												id="name"
+												name="name"
+												placeholder="Name"
+											/>
+										</label>
+
+										<div class="grid grid-cols-2 gap-4">
+											<label for="email">
+												<input
+													class="input"
+													type="email"
+													id="email"
+													name="email"
+													placeholder="Email"
+												/>
+											</label>
+
+											<label for="phone">
+												<input
+													class="input"
+													type="text"
+													id="phone"
+													name="phone"
+													placeholder="Phone"
+												/>
+											</label>
+										</div>
+
+										<label for="message">
+											<textarea
+												class="input min-h-[100px]"
+												type="text"
+												id="message"
+												name="message"
+												placeholder="Message"
+											></textarea>
+										</label>
+
+										<button type="submit" class="btn max-w-fit">Send</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Discover -->
+				<section class="bg-green-300 py-8 lg:py-20">
+					<div class="container">
+						<div class="flex items-center justify-between gap-3">
+							<h3>Discover more local markets</h3>
+							<a href="#" class="btn shrink-0">See all</a>
+						</div>
+
+						<!-- Slider main container -->
+						<div class="swiper swiper-discover">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper py-9">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div
+										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-1.png')] bg-cover bg-center bg-no-repeat shadow-light"
+									>
+										<div class="flex w-full flex-col items-center p-0">
+											<div class="p-12">
+												<img
+													src="./img/slide-logo-1.png"
+													class="h-auto w-full max-w-[294px]"
+													alt="slide logo"
+												/>
+											</div>
+											<p
+												class="min-h-[120px] w-full bg-white p-[30px] text-center text-[30px] font-extrabold leading-none"
+											>
+												Pitt Farmers Market
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div
+										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-2.png')] bg-cover bg-center bg-no-repeat shadow-light"
+									>
+										<div class="flex w-full flex-col p-0">
+											<div class="p-12">
+												<img
+													src="./img/slide-logo-2.png"
+													class="h-auto w-full max-w-[294px]"
+													alt="slide logo"
+												/>
+											</div>
+											<p
+												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
+											>
+												Arts District Farmers Market in Plano
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div
+										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-3.png')] bg-cover bg-center bg-no-repeat shadow-light"
+									>
+										<div class="flex w-full flex-col items-center p-0">
+											<div class="p-12">
+												<img
+													src="./img/slide-logo-3.png"
+													class="h-auto w-full max-w-[294px]"
+													alt="slide logo"
+												/>
+											</div>
+											<p
+												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
+											>
+												Anytown Fresh Foods Farmers Market
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div
+										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-2.png')] bg-cover bg-center bg-no-repeat shadow-light"
+									>
+										<div class="flex w-full flex-col items-center p-0">
+											<div class="p-12">
+												<img
+													src="./img/slide-logo-2.png"
+													class="h-auto w-full max-w-[294px]"
+													alt="slide logo"
+												/>
+											</div>
+											<p
+												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
+											>
+												Pitt Farmers Market
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer
+				class="flex flex-col items-center justify-center gap-4 bg-green-300 pb-[30px]"
+			>
+				<a href="#">
+					<img class="max-w-[174px]" src="./img/logo.png" alt="logo" />
+				</a>
+				<p class="text-xs">Copyright 2024</p>
+			</footer>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Main JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
