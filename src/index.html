@@ -141,31 +141,27 @@
 								<!-- Slides -->
 
 								<div class="swiper-slide">
-									<picture>
-										<source
-											media="(max-width: 450px)"
-											srcset="./img/hero-slide-mob.png"
-										/>
-										<source
-											media="(min-width: 450px)"
-											srcset="./img/hero-slide.png"
-										/>
-										<img src="./img/hero-slide-mob.png" alt="hero slide" />
-									</picture>
+									<img
+										class="min-h-[308px] object-cover"
+										src="./img/hero-slide.png"
+										alt="hero slide"
+									/>
 								</div>
 
 								<div class="swiper-slide">
-									<picture>
-										<source
-											media="(max-width: 450px)"
-											srcset="./img/hero-slide-mob.png"
-										/>
-										<source
-											media="(min-width: 450px)"
-											srcset="./img/hero-slide.png"
-										/>
-										<img src="./img/hero-slide-mob.png" alt="hero slide" />
-									</picture>
+									<img
+										class="min-h-[308px] object-cover"
+										src="./img/hero-slide.png"
+										alt="hero slide"
+									/>
+								</div>
+
+								<div class="swiper-slide">
+									<img
+										class="min-h-[308px] object-cover"
+										src="./img/hero-slide.png"
+										alt="hero slide"
+									/>
 								</div>
 							</div>
 
@@ -287,7 +283,7 @@
 				<section>
 					<div class="container">
 						<div
-							class="bg-map after:bg-map-gradient relative overflow-hidden bg-cover bg-center bg-no-repeat p-4 after:pointer-events-none after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-cover after:bg-center after:bg-no-repeat xs:px-8 xs:py-9 md:py-[74px]"
+							class="relative overflow-hidden bg-map bg-cover bg-center bg-no-repeat p-4 after:pointer-events-none after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-map-gradient after:bg-cover after:bg-center after:bg-no-repeat xs:px-8 xs:py-9 md:py-[74px]"
 						>
 							<img
 								class="absolute left-1/2 top-1/2 -mt-3 hidden -translate-x-1/2 -translate-y-1/2 md:block"
@@ -423,106 +419,79 @@
 				</section>
 
 				<!-- Discover -->
-				<section class="bg-green-300 py-8 lg:py-20">
+				<section class="overflow-hidden bg-green-300 py-8 lg:py-20">
 					<div class="container">
 						<div class="flex items-center justify-between gap-3">
 							<h3>Discover more local markets</h3>
 							<a href="#" class="btn shrink-0">See all</a>
 						</div>
 
-						<!-- Slider main container -->
-						<div class="swiper swiper-discover">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper py-9">
-								<!-- Slides -->
-								<div class="swiper-slide">
+						<div class="grid gap-[30px] py-10 md:grid-cols-2 lg:grid-cols-3">
+							<a
+								href="#"
+								class="group h-auto rounded-[10px] bg-white shadow-light"
+							>
+								<div class="h-auto">
 									<div
-										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-1.png')] bg-cover bg-center bg-no-repeat shadow-light"
+										class="flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-tl-[10px] rounded-tr-[10px] bg-[url('../img/slide-bg-1.png')] bg-cover bg-center bg-no-repeat p-8"
 									>
-										<div class="flex w-full flex-col items-center p-0">
-											<div class="p-12">
-												<img
-													src="./img/slide-logo-1.png"
-													class="h-auto w-full max-w-[294px]"
-													alt="slide logo"
-												/>
-											</div>
-											<p
-												class="min-h-[120px] w-full bg-white p-[30px] text-center text-[30px] font-extrabold leading-none"
-											>
-												Pitt Farmers Market
-											</p>
-										</div>
+										<img
+											src="./img/slide-logo-1.png"
+											class="h-auto w-full max-w-[294px]"
+											alt="slide logo"
+										/>
 									</div>
+									<p
+										class="w-full p-[30px] text-left text-[30px] font-extrabold leading-none group-hover:text-green-400"
+									>
+										Pitt Farmers Market
+									</p>
 								</div>
+							</a>
 
-								<div class="swiper-slide">
+							<a
+								href="#"
+								class="group h-auto rounded-[10px] bg-white shadow-light"
+							>
+								<div class="h-auto">
 									<div
-										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-2.png')] bg-cover bg-center bg-no-repeat shadow-light"
+										class="flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-tl-[10px] rounded-tr-[10px] bg-[url('../img/slide-bg-2.png')] bg-cover bg-center bg-no-repeat p-8"
 									>
-										<div class="flex w-full flex-col p-0">
-											<div class="p-12">
-												<img
-													src="./img/slide-logo-2.png"
-													class="h-auto w-full max-w-[294px]"
-													alt="slide logo"
-												/>
-											</div>
-											<p
-												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
-											>
-												Arts District Farmers Market in Plano
-											</p>
-										</div>
+										<img
+											src="./img/slide-logo-2.png"
+											class="h-auto w-full max-w-[294px]"
+											alt="slide logo"
+										/>
 									</div>
+									<p
+										class="w-full p-[30px] text-left text-[30px] font-extrabold leading-none group-hover:text-green-400"
+									>
+										Arts District Farmers Market in Plano
+									</p>
 								</div>
+							</a>
 
-								<div class="swiper-slide">
+							<a
+								href="#"
+								class="group h-auto rounded-[10px] bg-white shadow-light md:col-span-2 lg:col-span-1"
+							>
+								<div class="h-auto">
 									<div
-										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-3.png')] bg-cover bg-center bg-no-repeat shadow-light"
+										class="flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-tl-[10px] rounded-tr-[10px] bg-[url('../img/slide-bg-3.png')] bg-cover bg-center bg-no-repeat p-8"
 									>
-										<div class="flex w-full flex-col items-center p-0">
-											<div class="p-12">
-												<img
-													src="./img/slide-logo-3.png"
-													class="h-auto w-full max-w-[294px]"
-													alt="slide logo"
-												/>
-											</div>
-											<p
-												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
-											>
-												Anytown Fresh Foods Farmers Market
-											</p>
-										</div>
+										<img
+											src="./img/slide-logo-3.png"
+											class="h-auto w-full max-w-[294px]"
+											alt="slide logo"
+										/>
 									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div
-										class="h-full overflow-hidden rounded-[10px] bg-[url('../img/slide-bg-2.png')] bg-cover bg-center bg-no-repeat shadow-light"
+									<p
+										class="w-full p-[30px] text-left text-[30px] font-extrabold leading-none group-hover:text-green-400"
 									>
-										<div class="flex w-full flex-col items-center p-0">
-											<div class="p-12">
-												<img
-													src="./img/slide-logo-2.png"
-													class="h-auto w-full max-w-[294px]"
-													alt="slide logo"
-												/>
-											</div>
-											<p
-												class="min-h-[120px] w-full bg-white p-[30px] text-[30px] font-extrabold leading-none"
-											>
-												Pitt Farmers Market
-											</p>
-										</div>
-									</div>
+										Anytown Fresh Foods Farmers Market
+									</p>
 								</div>
-							</div>
-
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
+							</a>
 						</div>
 					</div>
 				</section>
